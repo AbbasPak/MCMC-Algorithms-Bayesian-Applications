@@ -40,13 +40,11 @@ Here’s a detailed explanation of how MCMC is used in Bayesian statistics:
 
 2. **Posterior Distribution**:
    - The posterior distribution is given by Bayes' theorem:
-     \[
-     \pi(\theta | \mathbf{y}) = \frac{L(\theta | \mathbf{y}) \pi(\theta)}{p(\mathbf{y})}
-     \]
-   - Here, \( p(\mathbf{y}) \) is the marginal likelihood or evidence, which is often difficult to compute directly.
+     $$\pi(\theta | \mathbf{y}) = \frac{L(\theta | \mathbf{y}) \pi(\theta)}{p(\mathbf{y})}$$
+   - Here, $p(\mathbf{y})$ is the marginal likelihood or evidence, which is often difficult to compute directly.
 
 3. **Constructing the Markov Chain**:
-   - Use an MCMC algorithm to construct a Markov chain whose stationary distribution is the posterior distribution \( \pi(\theta | \mathbf{y}) \).
+   - Use an MCMC algorithm to construct a Markov chain whose stationary distribution is the posterior distribution $\pi(\theta | \mathbf{y})$.
 
 
    - 🧩 Overview of popular MCMC methods.
