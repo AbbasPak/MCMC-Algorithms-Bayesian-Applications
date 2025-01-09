@@ -35,8 +35,8 @@ Here’s a detailed explanation of how MCMC is used in Bayesian statistics:
 ### Key Steps in Bayesian Inference Using MCMC
 
 1. **Specify the Bayesian Model**:
-   - Define the prior distribution \( \pi(\theta) \) for the parameters \( \theta \).
-   - Define the likelihood function \( L(\theta | \mathbf{y}) \) based on the observed data \( \mathbf{y} \).
+   - Define the prior distribution $\pi(\theta)$ for the parameters $\theta$.
+   - Define the likelihood function $L(\theta | \mathbf{y})$ based on the observed data $\mathbf{y}$.
 
 2. **Posterior Distribution**:
    - The posterior distribution is given by Bayes' theorem:
