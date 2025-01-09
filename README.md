@@ -47,7 +47,7 @@ Here’s a detailed explanation of how MCMC is used in Bayesian statistics:
    - Use an MCMC algorithm to construct a Markov chain whose stationary distribution is the posterior distribution $\pi(\theta | \mathbf{y})$.
 
 
-   - 🧩 Overview of popular MCMC methods.
+🧩 **Overview of popular MCMC methods**
 
 1. ⚙️ **Algorithms**
    - 🌀 **Metropolis-Hastings Algorithm**
