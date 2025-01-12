@@ -52,17 +52,13 @@ Here’s a detailed explanation of how MCMC is used in Bayesian statistics:
 1. ⚙️ **Algorithms**
    - 🌀 **Metropolis-Hastings Algorithm**
 
-
+---
 
    - 🔄 **Gibbs Sampling**
-Certainly! Here’s an overview of Gibbs sampling, including its mechanics and practical use:
-
----
 
 **Gibbs Sampling** is a Markov Chain Monte Carlo (MCMC) technique that is particularly useful for sampling from complex, high-dimensional probability distributions when direct sampling is challenging. Gibbs sampling is widely used in Bayesian statistics, especially for models where the joint distribution of parameters is known but difficult to sample from directly.
 
 ### Key Idea
-
 The main idea behind Gibbs sampling is to sample each parameter in a model sequentially from its *conditional distribution*, given the current values of all other parameters. This allows us to break down a high-dimensional joint distribution into simpler conditional distributions, which are often easier to sample from.
 
 ### How Gibbs Sampling Works
