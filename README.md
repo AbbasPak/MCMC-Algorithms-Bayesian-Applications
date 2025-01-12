@@ -63,7 +63,7 @@ The main idea behind Gibbs sampling is to sample each parameter in a model seque
 
 ### How Gibbs Sampling Works
 
-Assume we have a set of parameters \(\theta = (\theta_1, \theta_2, \ldots, \theta_d)\) that we want to sample from a joint posterior distribution \(p(\theta | \text{data})\). The steps are as follows:
+Assume we have a set of parameters $\theta = (\theta_1, \theta_2, \ldots, \theta_d)$ that we want to sample from a joint posterior distribution $p(\theta | \text{data})$. The steps are as follows:
 
 1. **Initialize Parameters**: Start with initial values for all parameters, \(\theta^{(0)} = (\theta_1^{(0)}, \theta_2^{(0)}, \ldots, \theta_d^{(0)})\).
 
@@ -96,9 +96,9 @@ Gibbs sampling works because each sequential update moves the parameter values c
 - **Slow Mixing**: Gibbs sampling can be slow if the parameters are highly correlated, as each parameter is updated conditionally rather than jointly.
 - **Convergence Issues**: In some cases, the algorithm can get stuck in regions of the parameter space, requiring more sophisticated methods like adaptive MCMC or the Metropolis-Hastings algorithm.
 
----
+Gibbs sampling is often combined with the Metropolis-Hastings algorithm when conditional distributions are not straightforward to sample from directly. 
 
-Gibbs sampling is often combined with the Metropolis-Hastings algorithm when conditional distributions are not straightforward to sample from directly. This combination can create a powerful tool for Bayesian inference, as shown in the algorithm you’re presenting.
+---
 
 1. 📈 **Applications in Bayesian Statistics**
    - 📐 Bayesian inference 
