@@ -69,13 +69,10 @@ Assume we have a set of parameters $\theta = (\theta_1, \theta_2, \ldots, \theta
 
 2. **Iterate Over Parameters**:
    - For each iteration $t$, sample each parameter $\theta_i$ from its conditional distribution given the current values of the other parameters:
-     $$
-     \theta_1^{(t)} \sim p(\theta_1 | \theta_2^{(t-1)}, \theta_3^{(t-1)}, \ldots, \theta_d^{(t-1)}, \text{data})
-     $$
-     $$
-     \theta_2^{(t)} \sim p(\theta_2 | \theta_1^{(t)}, \theta_3^{(t-1)}, \ldots, \theta_d^{(t-1)}, \text{data})
-     $$
-     - Continue this process until $\theta_d$.
+     $$\theta_1^{(t)} \sim p(\theta_1 | \theta_2^{(t-1)}, \theta_3^{(t-1)}, \ldots, \theta_d^{(t-1)}, \text{data})$$, 
+     $$\theta_2^{(t)} \sim p(\theta_2 | \theta_1^{(t)}, \theta_3^{(t-1)}, \ldots, \theta_d^{(t-1)}, \text{data})$$, $\ldots$ , 
+     $$\theta_d^{(t)} \sim p(\theta_d | \theta_1^{(t)}, \theta_2^{(t-1)}, \ldots, \theta_{d-1}^{(t-1)}, \text{data})$$
+     
    
 3. **Repeat**: Perform multiple iterations to allow the samples to converge to the target distribution.
 
