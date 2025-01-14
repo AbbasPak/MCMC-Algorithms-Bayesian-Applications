@@ -81,19 +81,7 @@ Assume we have a set of parameters $\theta = (\theta_1, \theta_2, \ldots, \theta
 
 ### Why Gibbs Sampling Works
 
-Gibbs sampling works because each sequential update moves the parameter values closer to their distribution under the joint posterior. Under certain conditions, this chain of parameter updates converges to the joint distribution \(p(\theta | \text{data})\), allowing us to estimate posterior summaries (e.g., means, variances, and quantiles).
-
-### Advantages of Gibbs Sampling
-
-- **Efficiency**: By working with conditional distributions, Gibbs sampling can be computationally efficient, especially when these conditional distributions have a closed form (e.g., Gaussian).
-- **Simplicity**: It’s straightforward to implement and does not require complex tuning, unlike some other MCMC methods.
-
-### Limitations
-
-- **Slow Mixing**: Gibbs sampling can be slow if the parameters are highly correlated, as each parameter is updated conditionally rather than jointly.
-- **Convergence Issues**: In some cases, the algorithm can get stuck in regions of the parameter space, requiring more sophisticated methods like adaptive MCMC or the Metropolis-Hastings algorithm.
-
-Gibbs sampling is often combined with the Metropolis-Hastings algorithm when conditional distributions are not straightforward to sample from directly. 
+Gibbs sampling works because each sequential update moves the parameter values closer to their distribution under the joint posterior. Under certain conditions, this chain of parameter updates converges to the joint distribution $p(\theta | \text{data})$, allowing us to estimate posterior summaries (e.g., means, variances, and quantiles). Gibbs sampling is often combined with the Metropolis-Hastings algorithm when conditional distributions are not straightforward to sample from directly. 
 
 ---
 
