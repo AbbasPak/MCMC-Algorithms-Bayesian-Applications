@@ -65,17 +65,17 @@ The main idea behind Gibbs sampling is to sample each parameter in a model seque
 
 Assume we have a set of parameters $\theta = (\theta_1, \theta_2, \ldots, \theta_d)$ that we want to sample from a joint posterior distribution $p(\theta | \text{data})$. The steps are as follows:
 
-1. **Initialize Parameters**: Start with initial values for all parameters, \(\theta^{(0)} = (\theta_1^{(0)}, \theta_2^{(0)}, \ldots, \theta_d^{(0)})\).
+1. **Initialize Parameters**: Start with initial values for all parameters, $\theta^{(0)} = (\theta_1^{(0)}, \theta_2^{(0)}, \ldots, \theta_d^{(0)})$.
 
 2. **Iterate Over Parameters**:
-   - For each iteration \(t\), sample each parameter \(\theta_i\) from its conditional distribution given the current values of the other parameters:
-     - \[
+   - For each iteration $t$, sample each parameter $\theta_i$ from its conditional distribution given the current values of the other parameters:
+     $$
      \theta_1^{(t)} \sim p(\theta_1 | \theta_2^{(t-1)}, \theta_3^{(t-1)}, \ldots, \theta_d^{(t-1)}, \text{data})
-     \]
-     - \[
+     $$
+     $$
      \theta_2^{(t)} \sim p(\theta_2 | \theta_1^{(t)}, \theta_3^{(t-1)}, \ldots, \theta_d^{(t-1)}, \text{data})
-     \]
-     - Continue this process until \(\theta_d\).
+     $$
+     - Continue this process until $\theta_d$.
    
 3. **Repeat**: Perform multiple iterations to allow the samples to converge to the target distribution.
 
