@@ -130,6 +130,9 @@ The acceptance probability \( A(x^{(t-1)}, y) \) is carefully designed so that t
 
 ---
 
+When applying MCMC methods in Bayesian inference, several challenges and limitations can arise. Here are some common ones:
+
+---
 1. 📈 **Applications in Bayesian Statistics**
    - 📐 Bayesian inference 
      
